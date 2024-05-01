@@ -1,0 +1,101 @@
+  body {
+      font-family: 'Roboto', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ff6f00; /* Orange background for gutter */
+      color: #333; /* Dark text for readability */
+  }
+  header, footer {
+      background-color: #333; /* Dark grey for header and footer */
+      /* color: #fff; */
+      color: #ff6f00; /* Orange for headings */
+      padding: 10px 20px;
+      text-align: center;
+  }
+  .container {
+      width: 80%;
+      margin: auto;
+      overflow: hidden;
+      padding: 20px;
+      background: #fafafa; /* Off-white for content background */
+      box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+  }
+  .section {
+      margin: 20px 0;
+      padding: 20px;
+      background: #fff; /* Pure white for section backgrounds */
+      border-radius: 8px; /* Rounded corners for sections */
+  }
+  h1, h2, h3 {
+      color: #ff6f00; /* Orange for headings */
+  }
+  p, ul {
+      line-height: 1.6;
+      color: #333; /* Ensuring text is black for contrast */
+  }
+  .cta-button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 10px 0;
+      background-color: #008000; /* Green button to stand out */
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+  }
+  img {
+      display: block;
+      max-width: 50%; /* Smaller width for better fit */
+      height: auto;
+      margin: 10px auto; /* Center image */
+      border-radius: 0.30rem;
+  }
+  .icon {
+      color: #ff6f00; /* Orange for icons */
+  }
+  .center {
+      text-align: center;
+  }
+  /* The Modal (background) */
+  .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    width: 80%; /* Full width */
+    max-width: 600px; /* Maximum width */
+  }
+
+  /* The Close Button */
+  .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+  }
+
+  #message {
+    width: 80%; /* Set the width to 80% of the parent container */
+    min-height: 10em; /* Set the default height to 10 lines */
+  }

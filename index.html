@@ -6,71 +6,7 @@
 <title>STIHL & TEMMY Promotion</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-<style>
-    body {
-        font-family: 'Roboto', Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #ff6f00; /* Orange background for gutter */
-        color: #333; /* Dark text for readability */
-    }
-    header, footer {
-        background-color: #333; /* Dark grey for header and footer */
-        /* color: #fff; */
-        color: #ff6f00; /* Orange for headings */
-        padding: 10px 20px;
-        text-align: center;
-    }
-    .container {
-        width: 80%;
-        margin: auto;
-        overflow: hidden;
-        padding: 20px;
-        background: #fafafa; /* Off-white for content background */
-        box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
-    }
-    .section {
-        margin: 20px 0;
-        padding: 20px;
-        background: #fff; /* Pure white for section backgrounds */
-        border-radius: 8px; /* Rounded corners for sections */
-    }
-    h1, h2, h3 {
-        color: #ff6f00; /* Orange for headings */
-    }
-    p, ul {
-        line-height: 1.6;
-        color: #333; /* Ensuring text is black for contrast */
-    }
-    .cta-button {
-        display: inline-block;
-        padding: 10px 20px;
-        margin: 10px 0;
-        background-color: #008000; /* Green button to stand out */
-        color: white;
-        text-decoration: none;
-        border-radius: 5px;
-    }
-    img {
-        display: block;
-        max-width: 50%; /* Smaller width for better fit */
-        height: auto;
-        margin: 10px auto; /* Center image */
-        border-radius: 0.30rem;
-    }
-    .icon {
-        color: #ff6f00; /* Orange for icons */
-    }
-    .center {
-        text-align: center;
-    }
-</style>
-</head>
-<body>
-<header>
-    <h1><i class="fas fa-leaf icon"></i>&nbsp;Welcome to the Future of Outdoor Power Equipment Purchases!</h1>
-</header>
-
+<link rel="stylesheet" href="assets/css/main.css">
 <div class="container">
     <h2 class="center">Hello, my name is $TEMMY, and I <i class="fas fa-heart icon"></i> STIHL!</h2></h2A>
     <img src="assets/images/TemmyMug.png" alt="Temmy Promotion Image"> <!-- Update src as needed -->
@@ -119,5 +55,33 @@
         <img src="assets/images/socials_footer.png" alt="">
     </p>
 </footer>
+<!-- Add this modal at the end of your body tag -->
+<div id="emailModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <form id="emailForm">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="mail">E-mail:</label><br>
+            <input type="text" id="mail" name="mail"><br>
+            <label for="phone">Phone:</label><br>
+            <input type="tel" id="phone" name="phone"><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message"></textarea><br>
+            <input type="hidden" id="subject" name="subject" value="TEMMY CRYPTO">
+            <input type="hidden" id="contact_number" name="contact_number">
+            <input type="submit" value="Send">
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+</div>
+
+<script src="assets/javascripts/email.min.js"></script>
+<script>
+    (function(){
+        emailjs.init("-iqcthp2NWs3HAe2J");
+    })();
+</script>
+<script src="assets/javascripts/main.js"></script>
 </body>
 </html>
